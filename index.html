@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Notiapp API PHP Client by sisodiakaran</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/sisodiakaran/notiapp-api-php-client">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/sisodiakaran/notiapp-api-php-client/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/sisodiakaran/notiapp-api-php-client/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Notiapp API PHP Client</h1>
+          <p></p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/sisodiakaran">sisodiakaran</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="notiapp-api-php-client" class="anchor" href="#notiapp-api-php-client"><span class="octicon octicon-link"></span></a>Notiapp API PHP Client</h1>
+
+<p>Notiapp API PHP Client is a client that authenticate users on Notiapp via Notiapp API and send notifications directly to their desktop.</p>
+
+<h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use:</h2>
+
+<ul>
+<li>Include Notiapp PHP Class
+<code>require_once('Notiapp/class.notiapp.php');</code>
+</li>
+<li>Create object
+<code>$notiapp = new Notiapp();</code>
+</li>
+<li>Start accessing the functions</li>
+</ul><h2>
+<a name="basic-flow" class="anchor" href="#basic-flow"><span class="octicon octicon-link"></span></a>Basic Flow</h2>
+
+<ul>
+<li>Step 1: To begin with, you'll need to ask Noti for a "request token". Once you have received the request token from Noti, you should redirect your user to the URL provided by Noti.</li>
+<li>Step 2: The user will be displayed a login page and asked if they wish to permit your application to send them notifications. Once they have authorized your application they will be redirected to your application.</li>
+<li>Step 3: When the user has returned to your application, you can exchange the request token for an access token which will be used to authenticate any future requests to the API (for example, whenever you send a notification).</li>
+<li>Step 4 (optional): Send the user a "welcome" notification letting them know the authorization process is completed.</li>
+</ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
