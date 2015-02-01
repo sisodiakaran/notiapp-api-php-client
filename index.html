@@ -3,48 +3,49 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Notiapp API PHP Client by sisodiakaran</title>
+    <title>Notiapp API by sisodiakaran</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
+    <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/sisodiakaran/notiapp-api-php-client">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/sisodiakaran/notiapp-api-php-client/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/sisodiakaran/notiapp-api-php-client/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+
+      <header>
+        <h1>Notiapp API</h1>
+        <p>PHP Client</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/sisodiakaran/notiapp-api-php-client" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/sisodiakaran/notiapp-api-php-client/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/sisodiakaran/notiapp-api-php-client/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
 
     <div class="wrapper">
-
+      <nav>
+        <ul></ul>
+      </nav>
       <section>
-        <div id="title">
-          <h1>Notiapp API PHP Client</h1>
-          <p></p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/sisodiakaran">sisodiakaran</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
         <h1>
-<a name="notiapp-api-php-client" class="anchor" href="#notiapp-api-php-client"><span class="octicon octicon-link"></span></a>Notiapp API PHP Client</h1>
+<a id="notiapp-api-php-client" class="anchor" href="#notiapp-api-php-client" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notiapp API PHP Client</h1>
 
 <p>Notiapp API PHP Client is a client that authenticate users on Notiapp via Notiapp API and send notifications directly to their desktop.</p>
 
 <h2>
-<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use:</h2>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use:</h2>
 
 <ul>
 <li>Include Notiapp PHP Class
@@ -54,8 +55,10 @@
 <code>$notiapp = new Notiapp();</code>
 </li>
 <li>Start accessing the functions</li>
-</ul><h2>
-<a name="basic-flow" class="anchor" href="#basic-flow"><span class="octicon octicon-link"></span></a>Basic Flow</h2>
+</ul>
+
+<h2>
+<a id="basic-flow" class="anchor" href="#basic-flow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Flow</h2>
 
 <ul>
 <li>Step 1: To begin with, you'll need to ask Noti for a "request token". Once you have received the request token from Noti, you should redirect your user to the URL provided by Noti.</li>
@@ -64,7 +67,10 @@
 <li>Step 4 (optional): Send the user a "welcome" notification letting them know the authorization process is completed.</li>
 </ul>
       </section>
-
+      <footer>
+        <p>Project maintained by <a href="https://github.com/sisodiakaran">sisodiakaran</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
