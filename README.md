@@ -1,3 +1,6 @@
+Unfortunatly, from 30th April, Noti will be shut down and you won't be able to authenticate to the service and no notifications will be delivered. You are recommended to uninstall the Noti applications from your computers.
+======
+
 Notiapp API PHP Client
 ======================
 
